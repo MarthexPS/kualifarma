@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">kuali Farma</string>
+    <string name="app_subtitle">Sistema de Inventario &amp; POS Móvil</string>
+    <string name="user_hint">ID de Empleado / Usuario</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="remember_me">Recordar usuario</string>
+    <string name="forgot_password">¿Olvidó contraseña?</string>
+    <string name="btn_login">Acceder al Portal</string>
+    <string name="version_ssl">v4.1.2 • Conexión Segura SSL</string>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt; Regresar al Inventario"
+            android:textColor="#2563EB"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#DCFCE7"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="ESTADO: EXCELENTE"
+            android:textColor="#166534"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Amoxicilina 500 mg"
+            android:textColor="#0F172A"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caja con 20 cápsulas • Antibiótico amplio espectro"
+            android:textColor="#64748B"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PRECIO AL PÚBLICO"
+                    android:textColor="#64748B"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$120.00 MXN"
+                    android:textColor="#2563EB"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COSTO ADQUISICIÓN"
+                    android:textColor="#64748B"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$74.50 MXN"
+                    android:textColor="#0F172A"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:text="INFORMACIÓN OPERATIVA"
+            android:textColor="#0F172A"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:stretchColumns="1">
+
+            <TableRow android:paddingVertical="6dp">
+                <TextView android:text="Existencia Física:" android:textColor="#64748B" />
+                <TextView android:gravity="end" android:text="150 cajas" android:textColor="#0F172A" android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="6dp">
+                <TextView android:text="Lote de Control:" android:textColor="#64748B" />
+                <TextView android:gravity="end" android:text="AMX-224" android:textColor="#0F172A" android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="6dp">
+                <TextView android:text="Fecha Caducidad:" android:textColor="#64748B" />
+                <TextView android:gravity="end" android:text="15 Dic 2026" android:textColor="#166534" android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="6dp">
+                <TextView android:text="Ubicación:" android:textColor="#64748B" />
+                <TextView android:gravity="end" android:text="Pasillo C - Estante 4" android:textColor="#0F172A" android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnAdjustStock"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2563EB"
+            android:text="Registrar Entrada / Ajustar Stock"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/btnPrintLabel"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:text="Imprimir Etiqueta de Precio"
+            android:textColor="#2563EB"
+            app:cornerRadius="10dp"
+            app:strokeColor="#2563EB" />
+
+    </LinearLayout>
+</ScrollView>
